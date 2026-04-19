@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { birds } from './birds.js'
+import BirdChat from './BirdChat.jsx'
 
 export default function App() {
   const [query, setQuery] = useState('')
@@ -42,6 +43,12 @@ export default function App() {
           </div>
         </div>
       </header>
+
+      <div className="chat-section">
+        <div className="chat-section-inner">
+          <BirdChat />
+        </div>
+      </div>
 
       <main className="container">
         <div className="meta-row">
